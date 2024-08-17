@@ -1,0 +1,74 @@
+body {
+    min-height:100vh;
+    margin:0;
+    display:grid;
+    grid-template:100% / 1fr 5fr;
+    background-color: azure;
+
+
+}
+
+.icon {
+    width:36px;
+}
+
+nav {
+    background-color:#5B99C2;
+    height:100%;
+    display:grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+nav ul {
+    grid-row:2 / 4;
+    display:flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+nav li {
+    width:50%;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+nav li button {
+    background-color: #5B99C2;
+    border: 1px solid black;
+    border-radius:24px;
+}
+
+nav li button:hover {
+    background-color:white;
+    color:#5B99C2;
+    border-color:#5B99C2;
+}
+
+#content {
+    background-image:url(../assets/content/images/background.jpg);
+    background-size:cover;
+    color: white;
+
+    display:grid;
+    grid-template: 1fr 3fr 3fr / 1fr 1fr;
+}
+
+#content h2 {
+    height:100%;
+    margin:0;
+    grid-column:1 / 4;
+    font-size:42px;
+    font-style:italic;
+    background-color: rgb(31, 49, 111, 0.4);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .card {
+    background: rgb(31, 49, 111, 0.75);
+    grid-row:2/-1;
+    margin:36px;
+    padding:24px;
+}
